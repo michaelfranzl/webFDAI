@@ -1,0 +1,60 @@
+:host {
+  width: 380px;
+  height: 380px;
+  display: block;
+  position: relative;
+}
+
+canvas {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+div.layer {
+  position: absolute;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+
+div#layer0 {
+  background-image: url('layer0.png');
+}
+
+div#layer1 {
+  background-image: url('layer1.png');
+}
+
+div#layer2 {
+  background-image: url('layer2.png');
+}
+
+div#layer3 {
+  background-image: url('layer3.png');
+}
+
+div#layer4 {
+  background-image: url('layer4.png');
+}
+
+div#layer5 {
+  background-image: url('layer5.png');
+}
+
+div#layer6 {
+  background-image: url('layer6.png');
+}
+
+div#layer7 {
+  background-image: url('layer7.png');
+}
+
+div#layer8 {
+  background-image: url('layer8.png');
+}
+
+div#layer9 {
+  background-image: url('layer9.png');
+}

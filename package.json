@@ -1,0 +1,16 @@
+{
+  "name": "webfdai",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webFDAI.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Michael Karl Franzl",
+  "license": "GPL-2.0-or-later",
+  "devDependencies": {
+    "@web/dev-server": "^0.1.30",
+    "eslint": "latest",
+    "eslint-config-airbnb-base": "latest"
+  }
+}
