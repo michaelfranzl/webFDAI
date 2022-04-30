@@ -99,9 +99,14 @@ class WebFDAI extends HTMLElement {
     this.layers[8].style['margin-left'] = `${this.yawRate * 60}px`;
 
     const modelMatrix = (new Matrix4())
+      // Rotate the coordinates from createSphere() into the zero position of the ball.
+      // This means we have to switch yaw and pitch axes when rotating below.
+      .rotate(90,   0, 0, 1)
+
+      // The FDAI mechanical Euler angle sequence is roll-yaw-pitch.
       .rotate(this.roll / 2 / Math.PI * 360,   0, 0, 1)
-      .rotate(this.yaw / 2 / Math.PI * 360,    0, 1, 0)
-      .rotate(this.pitch / 2 / Math.PI * 360,  1, 0, 0);
+      .rotate(-this.yaw / 2 / Math.PI * 360,   1, 0, 0)
+      .rotate(-this.pitch / 2 / Math.PI * 360, 0, 1, 0);
 
     const mvpMatrix = (new Matrix4(this.vpMatrix))
       .multiply(modelMatrix);
