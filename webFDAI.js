@@ -88,7 +88,7 @@ class WebFDAI extends HTMLElement {
   }
 
   render() {
-    this.layers[1].style.rotate = `${this.roll / 2 / Math.PI * 360}deg`;
+    this.layers[1].style.rotate = `${-this.roll / 2 / Math.PI * 360}deg`;
 
     this.layers[2].style['margin-left'] = `${this.rollError * 45}px`;
     this.layers[3].style['margin-top'] = `${-this.pitchError * 45}px`;
